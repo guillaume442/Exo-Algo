@@ -105,12 +105,81 @@
 
 
 
-let nombreDeDepart = prompt("Entrez un nombre de départ");
-nombreDeDepart = parseInt(nombreDeDepart);
-let somme = 0;
+// let nombreDeDepart = prompt("Entrez un nombre de départ");
+// nombreDeDepart = parseInt(nombreDeDepart);
+// let somme = 0;
 
-for (let i = 1; i <= nombreDeDepart; i++) {
-    somme += i;
+// for (let i = 1; i <= nombreDeDepart; i++) {
+//     somme += i;
+// }
+
+// console.log("La somme des entiers jusqu'à " + nombreDeDepart + " est : " + somme);
+
+
+// -----------------JS exo 1 --------------------------------------------------
+
+// let nom = "cabaret"
+// let prenom = prompt("Entrez un nom");
+// let age = 31+2
+// let taille = "1m77"
+
+// console.log(nom, prenom, age, taille)
+
+// let all = nom+prenom+age+taille
+
+// console.log(all)
+
+
+// ----------------------exo 4-------------------
+
+
+
+// let age = prompt("Entrez un age");
+
+// age = parseInt(age);
+
+// if (age >= 18) {
+//     console.log("Je suis majeur");
+// } else {
+//     console.log("Je ne suis pas majeur");
+// }17
+
+
+// ---------------exo5-----------------
+
+
+// Notes des personnes
+// let noteMatheo = 15.4;
+// let noteNathan = 9.2;
+// let noteLeo = 16.1;
+// let noteMaxime = 12.6;
+
+// // Calcul de la moyenne
+// let moyenne = (noteMatheo + noteNathan + noteLeo + noteMaxime) / 4;
+
+// // Affichage de la moyenne
+// console.log("La moyenne des notes est : " + moyenne);
+
+
+// -----------------------exo6----------------------
+
+
+// Générer un nombre aléatoire entre 1 et 100
+// let nombreAleatoire = Math.floor(Math.random() * 100) + 1;
+
+// Afficher le nombre aléatoire dans la console
+// console.log("Nombre aléatoire entre 1 et 100 : " + nombreAleatoire);
+
+function grossir() {
+    let monParagraphe = document.getElementById("monParagraphe");
+    if (monParagraphe) {
+        monParagraphe.style.fontSize = "100px";
+    }
 }
 
-console.log("La somme des entiers jusqu'à " + nombreDeDepart + " est : " + somme);
+function reduire() {
+    let monParagraphe = document.getElementById("monParagraphe");
+    if (monParagraphe) {
+        monParagraphe.style.fontSize = "15px";
+    }
+}
