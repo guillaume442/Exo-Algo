@@ -1,30 +1,30 @@
 // EXO 4
-// variable nombrePlusGrand / variable nombre / variable position
-// Boucle FOR i / i < 5 / i ++
-//      taper un nombre
-//      si nombre > nombrePlusGrand
-//          Alors nombrePlusGrand = nombre
+// variable *nombreBig* / variable *nombre* / variable position
+// Boucle FOR i = 1 / i < 5 / i ++
+//      --taper un nombre--
+//      si nombre > nombreBig
+//          Alors nombreBig = nombre
 //          position = i
 //      fin si
 // Fin de For
 // Affichez nombrePlusGrand
 // Affiche position
 
-let nombrePlusGrand = 0;
-let positionPlusGrand = 0; // Nouvelle variable pour stocker la position du plus grand nombre
-let nombre = 0;
+// let nombrePlusGrand = 0;
+// let positionPlusGrand = 0; // Nouvelle variable pour stocker la position du plus grand nombre
+// let nombre = 0;
 
-for (let i = 1; i <= 5; i++) {
-    nombre = parseInt(prompt("Entrer un nombre"));
+// for (let i = 1; i <= 5; i++) {
+//     nombre = parseInt(prompt("Entrer un nombre"));
 
-    if (nombre > nombrePlusGrand) {
-        nombrePlusGrand = nombre;
-        positionPlusGrand = i; // Mise à jour de la position du plus grand nombre
-    }
-}
+//     if (nombre > nombrePlusGrand) {
+//         nombrePlusGrand = nombre;
+//         positionPlusGrand = i; // Mise à jour de la position du plus grand nombre
+//     }
+// }
 
-console.log("Le plus grand nombre est : " + nombrePlusGrand);
-console.log("Il a été saisi à la position : " + positionPlusGrand);
+// console.log("Le plus grand nombre est : " + nombrePlusGrand);
+// console.log("Il a été saisi à la position : " + positionPlusGrand);
 
 
 
@@ -49,27 +49,26 @@ console.log("Il a été saisi à la position : " + positionPlusGrand);
 // AFFICHER "Il a été saisi à la position : " + positionPlusGrand
 
 
-let nombrePlusGrand = 0;
-let positionPlusGrand = 0;
-let nombre = 1; // Initialise nombre avec une valeur différente de zéro
+// let nombrePlusGrand = 0;
+// let positionPlusGrand = 0;
+// let nombre = 1; // Initialise nombre avec une valeur différente de zéro
+// let position = 0;
 
-let position = 0;
+// while (nombre !== 0) {
+//     nombre = parseInt(prompt("Entrer un nombre (saisie s'arrête avec 0)"));
 
-while (nombre !== 0) {
-    nombre = parseInt(prompt("Entrer un nombre (saisie s'arrête avec 0)"));
+//     if (nombre !== 0) {
+//         position++; // Incrémente la position à chaque saisie
 
-    if (nombre !== 0) {
-        position++; // Incrémente la position à chaque saisie
+//         if (nombre > nombrePlusGrand) {
+//             nombrePlusGrand = nombre;
+//             positionPlusGrand = position;
+//         }
+//     }
+// }
 
-        if (nombre > nombrePlusGrand) {
-            nombrePlusGrand = nombre;
-            positionPlusGrand = position;
-        }
-    }
-}
-
-console.log("Le plus grand nombre est : " + nombrePlusGrand);
-console.log("Il a été saisi à la position : " + positionPlusGrand);
+// console.log("Le plus grand nombre est : " + nombrePlusGrand);
+// console.log("Il a été saisi à la position : " + positionPlusGrand);
 
 
 
@@ -83,14 +82,15 @@ console.log("Il a été saisi à la position : " + positionPlusGrand);
 //     AFFICHER nombreDeDepart + " x " + multiplicateur + " = " + resultat
 // FIN POUR
 
-let nombreDeDepart = prompt("Entrez un nombre de départ");
-nombreDeDepart = parseInt(nombreDeDepart);
 
-for (let multiplicateur = 1; multiplicateur <= 10; multiplicateur++) {
-    let resultat = nombreDeDepart * multiplicateur;
-    console.log(`${nombreDeDepart} x ${multiplicateur} = ${resultat}`);
-}
 
+// let nombreDeDepart = prompt("Entrez un nombre de départ");
+// nombreDeDepart = parseInt(nombreDeDepart);
+
+// for (let multiplicateur = 1; multiplicateur <= 10; multiplicateur++) {
+//     let resultat = nombreDeDepart * multiplicateur;
+//     console.log(`${nombreDeDepart} x ${multiplicateur} = ${resultat}`);
+// }
 
 
 
@@ -102,6 +102,8 @@ for (let multiplicateur = 1; multiplicateur <= 10; multiplicateur++) {
 // FIN POUR
 
 // AFFICHER "La somme des entiers jusqu'à " + nombreDeDepart + " est : " + somme
+
+
 
 let nombreDeDepart = prompt("Entrez un nombre de départ");
 nombreDeDepart = parseInt(nombreDeDepart);
