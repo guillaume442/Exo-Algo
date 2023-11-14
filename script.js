@@ -126,6 +126,8 @@
 // console.log(nom, prenom, age, taille)
 
 // let all = nom+prenom+age+taille
+//ou
+//let all = "je m'appelle $(prenom) $(nom), j'ai $(age) et je mesure $(taille)"
 
 // console.log(all)
 
@@ -142,7 +144,7 @@
 //     console.log("Je suis majeur");
 // } else {
 //     console.log("Je ne suis pas majeur");
-// }17
+// }
 
 
 // ---------------exo5-----------------
@@ -170,16 +172,143 @@
 // Afficher le nombre aléatoire dans la console
 // console.log("Nombre aléatoire entre 1 et 100 : " + nombreAleatoire);
 
-function grossir() {
-    let monParagraphe = document.getElementById("monParagraphe");
-    if (monParagraphe) {
-        monParagraphe.style.fontSize = "100px";
-    }
-}
 
-function reduire() {
-    let monParagraphe = document.getElementById("monParagraphe");
-    if (monParagraphe) {
-        monParagraphe.style.fontSize = "15px";
+
+// --------------------------------exo7----------------------------------------
+
+
+
+// let h1 = document.createElement("h1");
+// h1.textContent = "Hello World";
+// h1.classList.add("monH1");
+
+
+// let paragraphe = document.createElement("p");
+// paragraphe.textContent = "Guillaume Cabaret, 31 ans, né a Roubaix, vis a Croix.";
+// paragraphe.id = "presentation";
+
+
+// document.body.appendChild(paragraphe);
+// document.body.appendChild(h1);
+
+
+
+
+//----------------------------exo8-----------------------------------------
+
+
+
+// // Demande à l'utilisateur d'entrer un nombre
+// let nombre = prompt("Entrez un nombre");
+
+// // Convertit l'entrée en nombre
+// nombre = parseFloat(nombre);
+
+// // Vérifie si le nombre est positif
+// if (nombre > 0) {
+//     // Génère une valeur aléatoire entre 1 et le nombre
+//     let valeurAleatoire = Math.floor(Math.random() * nombre) + 1;
+
+//     // Affiche la valeur aléatoire dans la console
+//     console.log("Valeur aléatoire entre 1 et " + nombre + " : " + valeurAleatoire);
+// } else {
+//     console.log("Le nombre n'est pas positif.");
+// }
+
+
+// --------------------exo tableau------------------
+
+
+
+// let championOverwatch = ['Ashe', 'Echo', 'Tracer', 'Reaper', 'Phara', 'McCree',
+//  'Soldier:76', 'Genji', 'Sombra', 'Doomfist', 'Widowmaker', 'Torbjorn', 'Hanzo',
+//   'Bastion', 'Junkrat', 'Mei', 'Symmetra'];
+
+// // Afficher dans la console Tracer
+// console.log(championOverwatch[2]);
+
+// // Afficher dans la console Mei
+// console.log(championOverwatch[15]);
+
+// // Changer le nom McCree en "Cole Cassidy"
+// championOverwatch[5] = "Cole Cassidy";
+
+// // Afficher le tableau mis à jour dans la console
+// console.log(championOverwatch);
+
+// championOverwatch.push("Ramattra");
+
+// // Afficher le tableau mis à jour dans la console
+// console.log(championOverwatch);
+
+// championOverwatch.push("nop");
+
+// // Afficher le tableau mis à jour dans la console
+// console.log(championOverwatch);
+
+// let indiceNop = championOverwatch.indexOf("nop");
+
+// // Si "nop" est trouvé, le supprimer
+// if (indiceNop !== -1) {
+//     championOverwatch.splice(indiceNop, 1);
+// }
+
+// // Afficher le tableau mis à jour dans la console
+// console.log(championOverwatch);
+
+// let championOverwatch = ['Ashe', 'Echo', 'Tracer', 'Reaper', 'Phara', 'McCree', 'Soldier:76', 'Genji', 'Sombra', 'Doomfist', 'Widowmaker', 'Torbjorn', 'Hanzo', 'Bastion', 'Junkrat', 'Mei', 'Symmetra'];
+
+// // Convertir le tableau en chaîne de caractères
+// let chaineDeCaracteres = championOverwatch.join(", ");
+
+// // Afficher la chaîne de caractères dans la console
+// console.log(chaineDeCaracteres);
+
+// let copieGenjiAHanzo = championOverwatch.slice(7, 13);
+
+// // Afficher la copie du tableau dans la console
+// console.log(copieGenjiAHanzo);
+
+// let championOverwatch = ['Ashe', 'Echo', 'Tracer', 'Reaper', 'Phara', 'McCree', 'Soldier:76', 'Genji', 'Sombra', 'Doomfist', 'Widowmaker', 'Torbjorn', 'Hanzo', 'Bastion', 'Junkrat', 'Mei', 'Symmetra'];
+
+// // Ajouter "champion : 0" au début du tableau
+// championOverwatch.unshift("champion : 0");
+
+// // Afficher le tableau mis à jour dans la console
+// console.log(championOverwatch);
+
+// let indiceBastion = championOverwatch.indexOf("Bastion");
+
+// // Si "Bastion" est trouvé, mettre tout en majuscules
+// if (indiceBastion !== -1) {
+//     championOverwatch[indiceBastion] = championOverwatch[indiceBastion].toUpperCase();
+// }
+
+// // Afficher le tableau mis à jour dans la console
+// console.log(championOverwatch);
+
+// let championOverwatch = ['Ashe', 'Echo', 'Tracer', 'Reaper', 'Phara', 'McCree', 'Soldier:76', 'Genji', 'Sombra', 'Doomfist', 'Widowmaker', 'Torbjorn', 'Hanzo', 'Bastion', 'Junkrat', 'Mei', 'Symmetra'];
+
+// // Obtenir le nombre de personnages dans le tableau
+// let nombreDePersonnages = championOverwatch.length;
+
+// // Afficher le nombre de personnages dans la console
+// console.log("Nombre de personnages : " + nombreDePersonnages);
+
+let championOverwatch = ['Ashe', 'Echo', 'Tracer', 'Reaper', 'Phara', 'McCree', 'Soldier:76', 'Genji', 'Sombra', 'Doomfist', 'Widowmaker', 'Torbjorn', 'Hanzo', 'Bastion', 'Junkrat', 'Mei', 'Symmetra'];
+
+// Variable pour stocker la concaténation des héros
+let listeHeros = "Les héros d'Overwatch sont : ";
+
+// Utiliser forEach pour parcourir le tableau et concaténer les héros
+championOverwatch.forEach(function(heros, index) {
+    listeHeros += heros;
+
+    // Ajouter une virgule si ce n'est pas le dernier héros
+    if (index < championOverwatch.length - 1) {
+        listeHeros += ', ';
     }
-}
+});
+
+// Afficher la liste des héros dans la console
+console.log(listeHeros);
