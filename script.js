@@ -295,20 +295,119 @@
 // // Afficher le nombre de personnages dans la console
 // console.log("Nombre de personnages : " + nombreDePersonnages);
 
-let championOverwatch = ['Ashe', 'Echo', 'Tracer', 'Reaper', 'Phara', 'McCree', 'Soldier:76', 'Genji', 'Sombra', 'Doomfist', 'Widowmaker', 'Torbjorn', 'Hanzo', 'Bastion', 'Junkrat', 'Mei', 'Symmetra'];
+// let championOverwatch = ['Ashe', 'Echo', 'Tracer', 'Reaper', 'Phara', 'McCree', 'Soldier:76', 'Genji', 'Sombra', 'Doomfist', 'Widowmaker', 'Torbjorn', 'Hanzo', 'Bastion', 'Junkrat', 'Mei', 'Symmetra'];
 
-// Variable pour stocker la concaténation des héros
-let listeHeros = "Les héros d'Overwatch sont : ";
+// // Variable pour stocker la concaténation des héros
+// let listeHeros = "Les héros d'Overwatch sont : ";
 
-// Utiliser forEach pour parcourir le tableau et concaténer les héros
-championOverwatch.forEach(function(heros, index) {
-    listeHeros += heros;
+// // Utiliser forEach pour parcourir le tableau et concaténer les héros
+// championOverwatch.forEach(function(heros, index) {
+//     listeHeros += heros;
 
-    // Ajouter une virgule si ce n'est pas le dernier héros
-    if (index < championOverwatch.length - 1) {
-        listeHeros += ', ';
-    }
-});
+//     // Ajouter une virgule si ce n'est pas le dernier héros
+//     if (index < championOverwatch.length - 1) {
+//         listeHeros += ', ';
+//     }
+// });
 
-// Afficher la liste des héros dans la console
-console.log(listeHeros);
+// // Afficher la liste des héros dans la console
+// console.log(listeHeros);
+
+
+
+// -------------------------------exo -------------------------
+
+
+
+// let data = {
+//     "id": "0001",
+//     "type": "donut",
+//     "name": "Cake",
+//     "ppu": 0.55,
+//     "batters":
+//     {
+//         "batter":
+//             [
+//                 { "id": "1001", "type": "Rick" },
+//                 { "id": "1002", "type": "Chocolate" },
+//                 { "id": "1003", "type": "Blueberry" },
+//                 { "id": "1004", "type": "Devil's Food" }
+//             ]
+//     },
+//     "topping":
+//         [
+//             { "id": "5001", "type": "None" },
+//             { "id": "5002", "type": "Glazed" },
+//             { "id": "5005", "type": "Morty" },
+//             { "id": "5007", "type": "helloWorld" },
+//             { "id": "5006", "type": "Chocolate with Sprinkles" },
+//             { "id": "5003", "type": "Chocolate" },
+//             { "id": "5004", "type": "Maple" }
+//         ]
+// }
+
+// console.log("Nom:", data.name);
+
+// console.log("PPU:", data.ppu);
+
+// console.log("Toppings:", data.topping);
+
+// console.log("Type pour l'id 1004:", data.batters.batter[3].type);
+
+// const id5004 = data.topping.find(topping => topping.id === "5004");
+// console.log("Type pour l'id 5004:", data.topping[6].type);
+
+// console.log("ID 5001:", data.topping[0].id);
+
+// console.log(`${id1001.type} est l'id ${id1001.id}`);
+
+// console.log(`${id5004.type} est le type de ${data.name}`);
+
+
+// ------------------------------exo objet ---------------------------------
+
+
+let data = {
+
+    "Izaline" : { "nom" : "Dhalluin", "prenom" : "Izaline", "age" : "26", "phrase" : function(){ return "one, two, three viva l'Algérie"}},
+    "Martin" : { "nom" : "Lagrelle", "prenom" : "Martin", "age" : "20", "phrase" : function(){ return "phrase fétiche"}},
+    "Eleon" : { "nom" : "Lamps", "prenom" : "Eleon", "age" : "25", "phrase" : function(){ return "Wouf"}},
+    "Cyrille" : { "nom" : "Deletré", "prenom" : "Cyrille", "age" : "31", "phrase" : function(){ return "On fait quand de l'angular"}},
+    "Guillaume" : { "nom" : "Cabaret", "prenom" : "Guillaume", "age" : "31", "phrase" : function(){ return "Erling Haaland !"}},
+    "Jamal" : { "nom" : "Taibi", "prenom" : "Jamal", "age" : "32", "phrase" : function(){ return "Come on gunners"}},
+    "Roxane" : { "nom" : "Kirshmeyer", "prenom" : "Roxanne", "age" : "26", "phrase" : function(){ return "C'est merveilleux"}},
+    "Oussman" : { "nom" : "Soaré", "prenom" : "Oussman", "age" : "21", "phrase" : function(){ return "Visca Barça"}},
+    "Asma" : { "nom" : "Chebaiki", "prenom" : "Asma", "age" : "24", "phrase" : function(){ return "C'est le Week-end !"}},
+    "Thomas" : { "nom" : "Vieira", "prenom" : "Thomas", "age" : "22", "phrase" : function(){ return "L'inconnu"}},
+    "Julien" : { "nom" : "Beauchant", "prenom" : "Julien", "age" : "21", "phrase" : function(){ return "misca musca mickey mouuse"}},
+    "Sabrina" : { "nom" : "Calesse", "prenom" : "Sabrina", "age" : "30", "phrase" : function(){ return "Hamdoullah ca va"}},
+    "Sandy" : { "nom" : "Terry", "prenom" : "Sandy", "age" : "39", "phrase" : function(){ return "Bon chance"}},
+    "Yassine" : { "nom" : "Boudouh", "prenom" : "Yassine", "age" : "31", "phrase" : function(){ return "économie d'énergie"}},
+    "Yaya" : { "nom" : "Balde", "prenom" : "Yaya", "age" : "22", "phrase" : function(){ return "of course"}}
+
+}
+
+// console.log(data["Martin"]["phrase"])
+
+data[Izaline].passion = "Voyages"
+data[Martin].passion = "Montage video"
+data[Eleon].passion = "Jeux video"
+data[Cyrille].passion = "Jeux"
+data[Guillaume].passion = "Les IAs"
+data[Jamal].passion = "Foot salle"
+data[Roxanne].passion = "Jeu de survie"
+data[Oussman].passion = "Football"
+data[Asma].passion = "Cuisiner"
+data[Thomas].passion = "Gaming"
+data[Julien].passion = "Games"
+data[Sabrina].passion = "Lire"
+data[Sandy].passion = "Dessin"
+data[Yassine].passion = "Voiture"
+data[Yaya].passion = "Sculture"
+
+for (let key in data){
+    let nom = data[key].nom;
+    let prenom = data[key].prenom;
+
+    console.log(`${nom} ${prenom}`)
+}
