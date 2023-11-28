@@ -1,0 +1,50 @@
+[
+    {
+      "id": "int",
+      "number": "string",
+      "title": "string",
+      "description": "string",
+      "chapter": "string",
+      "release_date": "date",
+      "arcId": "int",
+      "sagaId": "int",
+      "saga": {
+        "id": "int",
+        "saga_number": "string",
+        "saga_title": "string",
+        "saga_chapitre": "string",
+        "saga_volume": "string",
+        "saga_episode": "string"
+      },
+      "arc": {
+        "id": "int",
+        "arc_title": "string",
+        "arc_description": "string",
+        "sagaId": "int"
+      }
+    },
+    {
+      "id": "int",
+      "number": "string",
+      "title": "string",
+      "description": "string",
+      "chapter": "string",
+      "release_date": "date",
+      "arcId": "int",
+      "sagaId": "int",
+      "saga": {
+        "id": "int",
+        "saga_number": "string",
+        "saga_title": "string",
+        "saga_chapitre": "string",
+        "saga_volume": "string",
+        "saga_episode": "string"
+      },
+      "arc": {
+        "id": "int",
+        "arc_title": "string",
+        "arc_description": "string",
+        "sagaId": "int"
+      }
+    }
+  ]

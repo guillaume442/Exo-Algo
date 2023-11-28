@@ -367,47 +367,108 @@
 // ------------------------------exo objet ---------------------------------
 
 
-let data = {
+// let data = {
 
-    "Izaline" : { "nom" : "Dhalluin", "prenom" : "Izaline", "age" : "26", "phrase" : function(){ return "one, two, three viva l'Algérie"}},
-    "Martin" : { "nom" : "Lagrelle", "prenom" : "Martin", "age" : "20", "phrase" : function(){ return "phrase fétiche"}},
-    "Eleon" : { "nom" : "Lamps", "prenom" : "Eleon", "age" : "25", "phrase" : function(){ return "Wouf"}},
-    "Cyrille" : { "nom" : "Deletré", "prenom" : "Cyrille", "age" : "31", "phrase" : function(){ return "On fait quand de l'angular"}},
-    "Guillaume" : { "nom" : "Cabaret", "prenom" : "Guillaume", "age" : "31", "phrase" : function(){ return "Erling Haaland !"}},
-    "Jamal" : { "nom" : "Taibi", "prenom" : "Jamal", "age" : "32", "phrase" : function(){ return "Come on gunners"}},
-    "Roxane" : { "nom" : "Kirshmeyer", "prenom" : "Roxanne", "age" : "26", "phrase" : function(){ return "C'est merveilleux"}},
-    "Oussman" : { "nom" : "Soaré", "prenom" : "Oussman", "age" : "21", "phrase" : function(){ return "Visca Barça"}},
-    "Asma" : { "nom" : "Chebaiki", "prenom" : "Asma", "age" : "24", "phrase" : function(){ return "C'est le Week-end !"}},
-    "Thomas" : { "nom" : "Vieira", "prenom" : "Thomas", "age" : "22", "phrase" : function(){ return "L'inconnu"}},
-    "Julien" : { "nom" : "Beauchant", "prenom" : "Julien", "age" : "21", "phrase" : function(){ return "misca musca mickey mouuse"}},
-    "Sabrina" : { "nom" : "Calesse", "prenom" : "Sabrina", "age" : "30", "phrase" : function(){ return "Hamdoullah ca va"}},
-    "Sandy" : { "nom" : "Terry", "prenom" : "Sandy", "age" : "39", "phrase" : function(){ return "Bon chance"}},
-    "Yassine" : { "nom" : "Boudouh", "prenom" : "Yassine", "age" : "31", "phrase" : function(){ return "économie d'énergie"}},
-    "Yaya" : { "nom" : "Balde", "prenom" : "Yaya", "age" : "22", "phrase" : function(){ return "of course"}}
+//     "Izaline" : { "nom" : "Dhalluin", "prenom" : "Izaline", "age" : "26", "phrase" : function(){ return "one, two, three viva l'Algérie"}},
+//     "Martin" : { "nom" : "Lagrelle", "prenom" : "Martin", "age" : "20", "phrase" : function(){ return "phrase fétiche"}},
+//     "Eleon" : { "nom" : "Lamps", "prenom" : "Eleon", "age" : "25", "phrase" : function(){ return "Wouf"}},
+//     "Cyrille" : { "nom" : "Deletré", "prenom" : "Cyrille", "age" : "31", "phrase" : function(){ return "On fait quand de l'angular"}},
+//     "Guillaume" : { "nom" : "Cabaret", "prenom" : "Guillaume", "age" : "31", "phrase" : function(){ return "Erling Haaland !"}},
+//     "Jamal" : { "nom" : "Taibi", "prenom" : "Jamal", "age" : "32", "phrase" : function(){ return "Come on gunners"}},
+//     "Roxane" : { "nom" : "Kirshmeyer", "prenom" : "Roxanne", "age" : "26", "phrase" : function(){ return "C'est merveilleux"}},
+//     "Oussman" : { "nom" : "Soaré", "prenom" : "Oussman", "age" : "21", "phrase" : function(){ return "Visca Barça"}},
+//     "Asma" : { "nom" : "Chebaiki", "prenom" : "Asma", "age" : "24", "phrase" : function(){ return "C'est le Week-end !"}},
+//     "Thomas" : { "nom" : "Vieira", "prenom" : "Thomas", "age" : "22", "phrase" : function(){ return "L'inconnu"}},
+//     "Julien" : { "nom" : "Beauchant", "prenom" : "Julien", "age" : "21", "phrase" : function(){ return "misca musca mickey mouuse"}},
+//     "Sabrina" : { "nom" : "Calesse", "prenom" : "Sabrina", "age" : "30", "phrase" : function(){ return "Hamdoullah ca va"}},
+//     "Sandy" : { "nom" : "Terry", "prenom" : "Sandy", "age" : "39", "phrase" : function(){ return "Bon chance"}},
+//     "Yassine" : { "nom" : "Boudouh", "prenom" : "Yassine", "age" : "31", "phrase" : function(){ return "économie d'énergie"}},
+//     "Yaya" : { "nom" : "Balde", "prenom" : "Yaya", "age" : "22", "phrase" : function(){ return "of course"}}
 
-}
+// }
 
-// console.log(data["Martin"]["phrase"])
+// // console.log(data["Martin"]["phrase"])
 
-data[Izaline].passion = "Voyages"
-data[Martin].passion = "Montage video"
-data[Eleon].passion = "Jeux video"
-data[Cyrille].passion = "Jeux"
-data[Guillaume].passion = "Les IAs"
-data[Jamal].passion = "Foot salle"
-data[Roxanne].passion = "Jeu de survie"
-data[Oussman].passion = "Football"
-data[Asma].passion = "Cuisiner"
-data[Thomas].passion = "Gaming"
-data[Julien].passion = "Games"
-data[Sabrina].passion = "Lire"
-data[Sandy].passion = "Dessin"
-data[Yassine].passion = "Voiture"
-data[Yaya].passion = "Sculture"
+// data[Izaline].passion = "Voyages"
+// data[Martin].passion = "Montage video"
+// data[Eleon].passion = "Jeux video"
+// data[Cyrille].passion = "Jeux"
+// data[Guillaume].passion = "Les IAs"
+// data[Jamal].passion = "Foot salle"
+// data[Roxanne].passion = "Jeu de survie"
+// data[Oussman].passion = "Football"
+// data[Asma].passion = "Cuisiner"
+// data[Thomas].passion = "Gaming"
+// data[Julien].passion = "Games"
+// data[Sabrina].passion = "Lire"
+// data[Sandy].passion = "Dessin"
+// data[Yassine].passion = "Voiture"
+// data[Yaya].passion = "Sculture"
 
-for (let key in data){
-    let nom = data[key].nom;
-    let prenom = data[key].prenom;
+// for (let key in data){
+//     let nom = data[key].nom;
+//     let prenom = data[key].prenom;
 
-    console.log(`${nom} ${prenom}`)
-}
+//     console.log(`${nom} ${prenom}`)
+// }
+
+// fetch('https://api.thecatapi.com/v1/images/search')
+// .then(response => response.json())
+// .then(data => {
+//     console.log(data)
+// })
+// .then(response => response.json())
+// .then(data => {
+//     console.log(data)
+// })
+
+// Ajoute ça dans script.js
+// document.addEventListener('DOMContentLoaded', function() {
+//     fetch('https://dog.ceo/api/breeds/image/random')
+//         .then(response => response.json())
+//         .then(data => {
+//             const imgUrl = data.message;
+//             document.querySelector('.imgLol').src = imgUrl;
+//         })
+//         .catch(error => console.error('Erreur :', error));
+// });
+
+// Ajoute ça dans script.js
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://api.api-onepiece.com/episodes')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('episodeContainer');
+
+            // Itere sur les 300 premiers episodes (ou moins si il y en a moins)
+            for (let i = 0; i < Math.min(300, data.length); i++) {
+                const episode = data[i];
+
+                // Crée un élément pour chaque épisode
+                const episodeElement = document.createElement('div');
+                episodeElement.classList.add('episode');
+
+                // Mise à jour des éléments HTML avec les informations de l'épisode
+                episodeElement.innerHTML = `
+                    <h2>Episode ${episode.number || 'N/A'}</h2>
+                    <p>Title: ${episode.title || 'N/A'}</p>
+                    <p>Summary: ${episode.description || 'N/A'}</p>
+                    <hr>
+                `;
+
+                // Ajoute l'élément à la page
+                container.appendChild(episodeElement);
+
+                // Ajoute une classe spéciale pour les styles CSS (optionnel)
+                episodeElement.classList.add('episode-box');
+            }
+        })
+        .catch(error => console.error('Erreur :', error));
+});
+
+
+
+
+
+
+
